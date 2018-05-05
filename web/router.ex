@@ -16,6 +16,7 @@ defmodule Phoenixcrud.Router do
   scope "/", Phoenixcrud do
     pipe_through :browser # Use the default browser stack
 
+    resources "/users", UserController
     get "/", PageController, :index
   end
 
